@@ -15,8 +15,8 @@ cikisverisi = np.array([ [1,0],[1,0],[1,0],[1,0],[1,0],[1,0],[1,0],[1,0],[1,0],[
 
 
 #Bu kısım validation split için
-splitverisi = girisverisi[1:6]  #Giriş verisini ilk 3 elemanını alsın
-splitverisi = np.append(splitverisi,girisverisi[24:29]) #Split verisini tekrar giriş verisini son 3 elemaınıa ekledi
+splitverisi = girisverisi[1:6]  #Giriş verisini ilk 6 elemanını alsın
+splitverisi = np.append(splitverisi,girisverisi[24:29]) #Split verisini tekrar giriş verisini son elemaınıa ekledi
 splitverisi= splitverisi.reshape(-1,224,224,3)
 splitcikis = np.array([[1,0],[1,0],[1,0],[1,0],[1,0],[0,1],[0,1],[0,1],[0,1],[0,1]])
 
